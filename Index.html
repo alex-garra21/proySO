@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Index - Web Page</title>
+    <meta name="description" content="Simple starter HTML page" />
+    <style>
+        :root{
+            --bg:#f6f8fb;
+            --card:#ffffff;
+            --muted:#6b7280;
+            --accent:#2563eb;
+            --radius:10px;
+            --shadow: 0 6px 18px rgba(16,24,40,0.06);
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        html,body{height:100%}
+        body{
+            margin:0;
+            background:linear-gradient(180deg,#f8fafc, #eef2ff 60%);
+            color:#0f172a;
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            padding:32px;
+        }
+        .container{
+            width:100%;
+            max-width:980px;
+            background:var(--card);
+            border-radius:var(--radius);
+            box-shadow:var(--shadow);
+            padding:28px;
+        }
+        header{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:16px;
+            margin-bottom:18px;
+        }
+        .brand{display:flex;align-items:center;gap:12px}
+        .logo{
+            width:48px;height:48px;border-radius:10px;
+            background:linear-gradient(135deg,var(--accent),#7c3aed);
+            display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;
+            box-shadow:0 4px 12px rgba(37,99,235,0.18);
+        }
+        h1{font-size:1.25rem;margin:0}
+        nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:0.95rem}
+        main{display:grid;grid-template-columns:1fr 320px;gap:18px;align-items:start}
+        .card{
+            background:var(--bg);
+            padding:18px;border-radius:12px;
+            box-shadow:0 4px 10px rgba(2,6,23,0.04);
+        }
+        .grid{
+            display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px;
+        }
+        .small{font-size:0.9rem;color:var(--muted)}
+        footer{margin-top:18px;text-align:center;color:var(--muted);font-size:0.9rem}
+        @media (max-width:840px){
+            main{grid-template-columns:1fr}
+        }
+    </style>
+</head>
+<body>
+    <div class="container" role="main">
+        <header>
+            <div class="brand">
+                <div class="logo" aria-hidden="true">W</div>
+                <div>
+                    <h1>Welcome</h1>
+                    <div class="small">Simple starter page</div>
+                </div>
+            </div>
+            <nav aria-label="Primary">
+                <a href="#">Home</a>
+                <a href="#">Docs</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="card">
+                    <h2 style="margin-top:0">Quick overview</h2>
+                    <p class="small">Use this file as the starting point for your project. It includes a responsive layout, basic styling and accessible structure.</p>
+
+                    <div class="grid" aria-hidden="false">
+                        <div class="card">
+                            <strong>Responsive</strong>
+                            <div class="small">Mobile-first layout with CSS grid.</div>
+                        </div>
+                        <div class="card">
+                            <strong>Accessible</strong>
+                            <div class="small">Semantic tags and ARIA where appropriate.</div>
+                        </div>
+                        <div class="card">
+                            <strong>Lightweight</strong>
+                            <div class="small">No frameworks required — plain HTML/CSS/JS.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="height:12px"></div>
+
+                <div class="card" aria-labelledby="example-form">
+                    <h3 id="example-form" style="margin-top:0">Contact</h3>
+                    <form onsubmit="alert('Form submitted');return false;">
+                        <label class="small" for="name">Name</label><br />
+                        <input id="name" name="name" type="text" placeholder="Your name" style="width:100%;padding:10px;margin:6px 0;border-radius:8px;border:1px solid #e6e9ef" />
+                        <label class="small" for="message">Message</label><br />
+                        <textarea id="message" name="message" rows="4" placeholder="Write a short message" style="width:100%;padding:10px;margin:6px 0;border-radius:8px;border:1px solid #e6e9ef"></textarea>
+                        <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:8px">
+                            <button type="reset" style="padding:8px 12px;border-radius:8px;border:1px solid #d1d5db;background:#fff">Reset</button>
+                            <button type="submit" style="padding:8px 12px;border-radius:8px;border:0;background:var(--accent);color:#fff">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <aside>
+                <div class="card">
+                    <h4 style="margin-top:0">Project</h4>
+                    <p class="small">Index.html — place to start building your site.</p>
+                    <ul class="small" style="padding-left:18px;margin:8px 0 0 0">
+                        <li>HTML structure</li>
+                        <li>CSS variables</li>
+                        <li>Responsive grid</li>
+                    </ul>
+                </div>
+
+                <div style="height:12px"></div>
+
+                <div class="card">
+                    <h4 style="margin-top:0">Tips</h4>
+                    <div class="small">Keep styles modular. Move CSS to a separate file when project grows.</div>
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            &copy; <span id="year"></span> • Built with plain HTML
+        </footer>
+    </div>
+
+    <script>
+        // Set current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
