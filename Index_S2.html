@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe: Balanceador de Cargas Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="page-container">
+
+        <header class="navbar">
+            <div class="logo-area">
+                <div class="logo">BC</div>
+                <div class="title-group">
+                    <h1>Balanceador de Cargas Web [Servidor No. 2]</h1>
+                    <p>Informe de Sistemas Operativos I [Grupo 4]</p>
+                </div>
+            </div>
+            <nav>
+                <a href="#definicion">Definición</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#tipos">Tipos</a>
+            </nav>
+        </header>
+
+        <div class="main-layout">
+            
+            <main class="content-area">
+                
+                <section id="definicion" class="card overview-card">
+                    <h2>Conceptos Clave</h2>
+                    <div class="overview-grid">
+                        <div class="overview-item">
+                            <h3>Definición</h3>
+                            <p>Es la práctica de distribuir cargas de trabajo informáticas entre dos o más ordenadores. En Internet, divide el tráfico de red entre varios servidores, reduciendo la carga y mejorando la eficiencia y velocidad.</p>
+                        </div>
+                        <div class="overview-item">
+                            <h3>Estático vs. Dinámico</h3>
+                            <p><strong>Estático:</strong> Asigna cargas según un plan predeterminado, sin conocer el estado del servidor.<br><strong>Dinámico:</strong> Considera el estado actual, pudiendo mover tráfico de servidores sobrecargados.</p>
+                        </div>
+                        <div class="overview-item">
+                            <h3>Conmutación por Error</h3>
+                            <p>Ocurre cuando un servidor falla y el balanceador redirige sus procesos a un servidor secundario. Es fundamental para la fiabilidad y evitar interrupciones.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="beneficios" class="card">
+                    <h2>Beneficios Principales</h2>
+                    <p>Implementar un balanceador de carga ofrece ventajas clave:</p>
+                    <ul>
+                        <li><strong>Mejor rendimiento:</strong> Distribuye el tráfico para que ningún servidor se sobrecargue, mejorando la velocidad.</li>
+                        <li><strong>Escalabilidad:</strong> Permite agregar o quitar servidores fácilmente según la demanda del tráfico.</li>
+                        <li><strong>Manejo de fallas:</strong> Detecta servidores en mal estado y redirige automáticamente el tráfico a los que están en buen estado.</li>
+                        <li><strong>Previene cuellos de botella:</strong> Maneja picos repentinos de tráfico sin problemas.</li>
+                        <li><strong>Persistencia de la sesión:</strong> Puede mantener sesiones de usuario (ej. carritos de compra) en un mismo servidor.</li>
+                    </ul>
+                </section>
+
+                <section id="tipos" class="card">
+                    <h2>Algunos Tipos de Balanceo</h2>
+                    <p>Existen diversos métodos y tipos de balanceo, entre ellos:</p>
+                    <ul>
+                        <li>Red Definida por Software (SDN)</li>
+                        <li>Protocolo de Datagramas de Usuario (UDP)</li>
+                        <li>Protocolo de Control de Transmisión (TCP)</li>
+                        <li>Equilibrio de Carga Elástico</li>
+                        <li>Equilibrio de Carga Geográfico</li>
+                        <li>Equilibrador de Carga como Servicio (LBaaS)</li>
+                    </ul>
+                </section>
+                
+                <section class="card">
+                    <h2>Conclusión del Informe</h2>
+                    <p>El balanceador de carga web es un elemento esencial para el rendimiento, disponibilidad y estabilidad de sistemas modernos. Permite que los sitios soporten millones de usuarios al distribuir el trabajo inteligentemente.</p>
+                    <p>Se puede considerar el <strong>"cerebro del tráfico"</strong> de una infraestructura web, garantizando servicios rápidos, seguros y siempre disponibles.</p>
+                </section>
+            </main>
+
+            <aside class="sidebar">
+                
+                <div class="card">
+                    <h3>Información del Proyecto</h3>
+                    <p><strong>Universidad:</strong> Universidad Mariano Gálvez de Guatemala</p>
+                    <p><strong>Curso:</strong> Sistemas Operativos I</p>
+                    <p><strong>Catedrático:</strong> Ing. Fredy Yoscael Buezo Vasquez</p>
+                    <hr>
+                    <p><strong>Fuentes (E-grafía):</strong></p>
+                    <div class="button-group">
+                        <a href="https://www.cloudflare.com/es-es/learning/performance/what-is-load-balancing/" class="btn" target="_blank" rel="noopener noreferrer">Cloudflare</a>
+                        <a href="https://www.geeksforgeeks.org/system-design/what-is-load-balancer-system-design/" class="btn" target="_blank" rel="noopener noreferrer">GeeksforGeeks</a>
+                        <a href="https://www.vmware.com/topics/load-balancing" class="btn" target="_blank" rel="noopener noreferrer">VMware</a>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Integrantes</h3>
+                    <ul>
+                        <li>Cristian Rafael Cu Chan <br> [Carnet: 0902-23-2280]</li>
+                        <li>Edin Estuardo Requena García <br> [Carnet: 0902-23-2447]</li>
+                        <li>Kimberly Julissa Calel Cuc <br> [Carnet: 0902-23-10553]</li>
+                        <li>Helen Sofía Medio Chun <br> [Carnet: 4090-24-16037]</li>
+                        <li>Steven Gianni Alexander Reyes Riveiro <br> [Carnet:  0902-20-698]</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Ejemplos de usos reales</h3>
+                    <p>Grandes compañías confían en el balanceo de carga para operar:</p>
+                    <ul>
+                        <li><strong>Netflix:</strong> Para repartir millones de conexiones de video.</li>
+                        <li><strong>Amazon:</strong> Para distribuir solicitudes de compra.</li>
+                        <li><strong>Google:</strong> Para balancear sus miles de servidores globales.</li>
+                        <li><strong>Facebook:</strong> Para mantener la plataforma activa.</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <footer>
+            <p>© 2025 • Construido con HTML/CSS para Sistemas Operativos I</p>
+        </footer>
+    </div>
+
+    <style>
+        /* --- Reseteo Básico y Fuente --- */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5; /* Fondo gris claro como en la captura */
+            color: #333;
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        /* --- Contenedor Principal (Tarjeta blanca) --- */
+        .page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.07);
+            overflow: hidden;
+        }
+
+        /* --- Encabezado y Navegación --- */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            width: 44px;
+            height: 44px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2); /* Gradiente morado */
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .title-group h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #212529;
+        }
+
+        .title-group p {
+            font-size: 0.95rem;
+            color: #6c757d;
+        }
+
+        .navbar nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .navbar nav a {
+            text-decoration: none;
+            color: #495057;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .navbar nav a:hover {
+            color: #0d6efd;
+        }
+
+        /* --- Layout Principal (Grid 2 columnas) --- */
+        .main-layout {
+            display: grid;
+            grid-template-columns: 1fr; /* Stack por defecto para móviles */
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        /* En pantallas más grandes, 2 columnas */
+        @media (min-width: 992px) {
+            .main-layout {
+                grid-template-columns: 2.5fr 1fr; /* Proporción 70/30 aprox. */
+            }
+        }
+
+        /* --- Tarjetas (Cards) --- */
+        .card {
+            background-color: #f8f9fc; /* Fondo gris muy claro para tarjetas */
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid #e9ecef;
+        }
+
+        /* Separar tarjetas en la misma columna */
+        .content-area > .card:not(:last-child),
+        .sidebar > .card:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #212529;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #dee2e6;
+            margin: 1rem 0;
+        }
+
+        /* --- Grid de "Conceptos Clave" --- */
+        .overview-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Stack por defecto */
+            gap: 1rem;
+        }
+
+        /* Grid de 3 columnas en pantallas grandes */
+        @media (min-width: 768px) {
+            .overview-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .overview-item {
+            background: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+        .overview-item p {
+            font-size: 0.9rem;
+            color: #495057;
+        }
+
+        /* --- Botones --- */
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #0d6efd; /* Azul primario */
+            color: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #0b5ed7;
+            box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+        }
+
+        /* --- Pie de Página --- */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            color: #6c757d;
+            border-top: 1px solid #e9ecef;
+        }
+
+        /* --- Responsividad Móvil Adicional --- */
+        @media (max-width: 768px) {
+            body {
+                padding: 0.5rem;
+            }
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .navbar nav {
+                width: 100%;
+                justify-content: space-around;
+            }
+
+            .main-layout {
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+    </style>
+    
+</body>
+</html>
